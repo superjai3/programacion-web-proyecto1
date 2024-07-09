@@ -1,0 +1,21 @@
+<div class="container">
+  <h2>Table 2: Episodios por Personajes</h2>
+  <table class="table table-striped table-hover">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Episodes</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let morty of Personaje">
+        <td>{{ morty.name }}</td>
+        <td>
+          <select class="form-select select">
+            <option *ngFor="let Episodio of morty.episode" [value]="Episodio">{{ Episodio }}</option>
+          </select>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>

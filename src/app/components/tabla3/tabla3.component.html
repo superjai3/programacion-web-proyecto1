@@ -1,0 +1,17 @@
+<div class="container">
+  <h2>Table 3: Cantidad de Episodios por Personajes</h2>
+  <table class="table table-striped table-hover">
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Number of Episodes</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let morty of Personaje">
+        <td>{{ morty.id }}</td>
+        <td>{{ morty.episode.length }}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
